@@ -11,17 +11,27 @@ public class Main {
 
 	private void start() {
 
-		String[] cars = { "civic", "gol", "palio", "uno" };
+		String[] cars = { "civic", "gol", "palio", "uno", "fox" };
 
-		int max = cars.length;
-
-		int i = 0;
-
-		while (i <= max) {
-			System.out.println("Modelo: " + cars[i]);
-			i++;
+		for (String itens : cars) {
+			System.out.println("Modelo: " + itens);
 		}
 
+		cars[1] = "L200";
+
+		System.out.print("\n");
+
+		for (String itens : cars) {
+			System.out.println("Modelo: " + itens);
+		}
+
+		cars[4] = "gol";
+
+		System.out.print("\n");
+
+		for (String itens : cars) {
+			System.out.println("Modelo: " + itens);
+		}
 	}
 
 }
